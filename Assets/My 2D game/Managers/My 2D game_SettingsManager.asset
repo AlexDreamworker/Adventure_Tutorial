@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b776810ebfa374d7ba8f0fb5ed6e3265, type: 3}
   m_Name: My 2D game_SettingsManager
   m_EditorClassIdentifier: 
-  saveFileName: My 2D game
+  saveFileName: My2Dgame
   saveTimeDisplay: 0
   customSaveFormat: MMMM dd, yyyy
   takeSaveScreenshots: 0
@@ -22,7 +22,7 @@ MonoBehaviour:
   reloadSceneWhenLoading: 0
   useJsonSerialization: 0
   sceneAttributes: []
-  actionListOnStart: {fileID: 0}
+  actionListOnStart: {fileID: 11400000, guid: 0bdb501798470ad4b8bf998350c3b6c9, type: 2}
   blackOutWhenSkipping: 0
   playerSwitching: 1
   player: {fileID: 6123738396228912186, guid: 461ae38f102395144a359a0733b4de94, type: 3}
@@ -57,7 +57,7 @@ MonoBehaviour:
   inventoryInteractions: 1
   inventoryDisableLeft: 1
   allowDefaultInventoryInteractions: 0
-  inventoryDisableUnhandled: 0
+  inventoryDisableUnhandled: 1
   inventoryDisableDefined: 1
   activeWhenHover: 0
   inventoryActiveEffect: 1
@@ -159,9 +159,9 @@ MonoBehaviour:
   defaultLanguage: 0
   defaultVoiceLanguage: 0
   defaultShowSubtitles: 0
-  defaultSfxVolume: 0.9
+  defaultSfxVolume: 0.47505942
   defaultMusicVolume: 0.6
-  defaultSpeechVolume: 1
+  defaultSpeechVolume: 0.99630517
   showDebugLogs: 0
   printActionCommentsInConsole: 0
   showActiveActionLists: 0
