@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b776810ebfa374d7ba8f0fb5ed6e3265, type: 3}
-  m_Name: My 2D game_SettingsManager
+  m_Name: SecondScene_SettingsManager
   m_EditorClassIdentifier: 
-  saveFileName: My2Dgame
+  saveFileName: SecondScene
   saveTimeDisplay: 0
   customSaveFormat: MMMM dd, yyyy
   takeSaveScreenshots: 0
@@ -22,10 +22,10 @@ MonoBehaviour:
   reloadSceneWhenLoading: 0
   useJsonSerialization: 0
   sceneAttributes: []
-  actionListOnStart: {fileID: 11400000, guid: 0bdb501798470ad4b8bf998350c3b6c9, type: 2}
+  actionListOnStart: {fileID: 0}
   blackOutWhenSkipping: 0
   playerSwitching: 1
-  player: {fileID: 6123738396228912186, guid: 461ae38f102395144a359a0733b4de94, type: 3}
+  player: {fileID: 0}
   players: []
   movementMethod: 0
   inputMethod: 2
@@ -146,11 +146,8 @@ MonoBehaviour:
   loadingScene: 0
   useAsyncLoading: 0
   loadingDelay: 0
-  playMusicWhilePaused: 1
-  musicStorages:
-  - ID: 0
-    audioClip: {fileID: 8300000, guid: 206bef4e6781e44e4a1135895b04c5f0, type: 3}
-    relativeVolume: 1
+  playMusicWhilePaused: 0
+  musicStorages: []
   ambienceStorages: []
   volumeControl: 0
   musicMixerGroup: {fileID: 0}
@@ -162,9 +159,9 @@ MonoBehaviour:
   defaultLanguage: 0
   defaultVoiceLanguage: 0
   defaultShowSubtitles: 0
-  defaultSfxVolume: 0.47505942
+  defaultSfxVolume: 0.9
   defaultMusicVolume: 0.6
-  defaultSpeechVolume: 0.99630517
+  defaultSpeechVolume: 1
   showDebugLogs: 0
   printActionCommentsInConsole: 0
   showActiveActionLists: 0
