@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 514319634258474921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.74, y: -3.14, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0659859, y: 1.0659859, z: 1.0659859}
   m_Children:
   - {fileID: 4069700746467509451}
   - {fileID: 4464637498932286264}
@@ -174,7 +174,7 @@ MonoBehaviour:
   speechLabel: 
   lineID: -1
   displayLineID: -1
-  speechColor: {r: 1, g: 1, b: 1, a: 1}
+  speechColor: {r: 0.5779073, g: 0.5775721, b: 0.9811321, a: 1}
   portraitIcon:
     texture: {fileID: 0}
     isAnimated: 0
@@ -232,52 +232,64 @@ MonoBehaviour:
   turn2DCharactersIn3DSpace: 1
   spriteChild: {fileID: 4069700746467509451}
   rotateSprite3D: 0
-  idleAnimSprite: idle
-  walkAnimSprite: walk
-  runAnimSprite: run
-  talkAnimSprite: talk
+  idleAnimSprite: BrainIdle
+  walkAnimSprite: BrainWalk
+  runAnimSprite: 
+  talkAnimSprite: BrainTalk
   lockScale: 0
   spriteScale: 1
   lockDirection: 0
   spriteDirection: D
   doDirections: 1
-  crossfadeAnims: 0
+  crossfadeAnims: 1
   doDiagonals: 0
   isTalking: 0
   frameFlipping: 0
   flipCustomAnims: 0
   _spriteDirectionData:
-    directions: 1
+    directions: 2
     down: 1
     left: 1
     right: 1
     up: 1
-    downLeft: 0
-    upLeft: 0
-    upRight: 0
-    downRight: 0
+    downLeft: 1
+    upLeft: 1
+    upRight: 1
+    downRight: 1
     spriteDirections:
     - suffix: D
       angle: 0
-      maxAngle: 45
+      maxAngle: 22.5
+    - suffix: DL
+      angle: 45
+      maxAngle: 67.5
     - suffix: L
       angle: 90
-      maxAngle: 135
+      maxAngle: 112.5
+    - suffix: UL
+      angle: 135
+      maxAngle: 157.5
     - suffix: U
       angle: 180
-      maxAngle: 225
+      maxAngle: 202.5
+    - suffix: UR
+      angle: 225
+      maxAngle: 247.5
     - suffix: R
       angle: 270
-      maxAngle: 315
+      maxAngle: 292.5
+    - suffix: DR
+      angle: 315
+      maxAngle: 337.5
     isUpgraded: 1
   angleSnapping: 0
-  walkSpeedScale: 2
+  walkSpeedScale: 3
   runSpeedScale: 6
   reverseSpeedFactor: 1
   turnSpeed: 7
   acceleration: 6
   deceleration: 0
-  turnBeforeWalking: 0
+  turnBeforeWalking: 1
   runDistanceThreshold: 1
   antiGlideMode: 0
   retroPathfinding: 0
@@ -343,6 +355,88 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &4081269364528310911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2754584577001266361}
+  - component: {fileID: 3156852799020352753}
+  m_Layer: 0
+  m_Name: BrainShadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2754584577001266361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081269364528310911}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.030957248, y: 0.121952936, z: 0}
+  m_LocalScale: {x: 0.93809867, y: 0.93809867, z: 0.93809867}
+  m_Children: []
+  m_Father: {fileID: 4069700746467509451}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3156852799020352753
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081269364528310911}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d88651e17ed8846178fdc225323d8e63, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.26, y: 0.35}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6604834512153807247
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +466,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2754584577001266361}
   m_Father: {fileID: 8756756287837790380}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -415,7 +510,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: b7dbf94392cd6461f91517e164b64616, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -443,8 +538,8 @@ MonoBehaviour:
   affectChildren: 1
   followSortingMap: 1
   customSortingMap: {fileID: 0}
-  offsetOriginal: 0
-  livePreview: 0
+  offsetOriginal: 1
+  livePreview: 1
 --- !u!95 &7705843717905703177
 Animator:
   serializedVersion: 3
